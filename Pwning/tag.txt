@@ -1,0 +1,3 @@
+tag Ezs = ez buffoverflow
+tag Ezs = classic ret2libc
+tag medium = defcon2019 speedrun 3

@@ -1,0 +1,73 @@
+GRIS - UFRJ
+NOME: David Rodrigues Albuquerque
+TAG: Engenharia Reversa
+
+Solução 1: A resposta tá hardcode dentro do strcmp que compara a entrada do usuário com a esperada.
+Resposta: "cache,obvio\n"
+
+Solução 2: A string da resposta foi dividida em 4 endereços de memória diferentes. Em cada uma das posições, existe um caractere. Com isto, 
+para cada um dos caracteres, era só achar um segundo caractere tal que
+c1 ^ c2 == 0x41 para que não entrasse no ganhou = 0.
+Resposta: "aponta para a proxima instrucao\n"
+
+Solução 3: O número a ser comparado está declarado no inicio da função: 0x1bd5a262d. Basta convertê-lo para decimal
+Resposta 3: 7471769133
+
+Tabela auxiliar para a resolução da 2:
+32 -> a 
+49 -> p 
+46 -> o 
+47 -> n 
+53 -> t 
+97 -> [SPACE]  
+49 -> p 
+51 -> r
+57 -> x
+40 -> i
+44 -> m
+50 -> s
+52 -> u
+34 -> c
+75 -> \n
+
+32 - a
+49 - p
+46 - o
+47 - n
+53 - t
+32 - a
+97 - [space]
+
+49 - p
+32 - a
+51 - r
+32 - a
+97 - [space]
+ 
+32 - a
+97 - [space]
+ 
+49 - p
+51 - r
+46 - o
+57 - x
+40 - i
+44 - m
+32 - a
+97 - [space]
+
+40 - i
+47 - n
+50 - s
+53 - t
+51 - r
+52 - u
+34 - c
+32 - a
+46 - o
+75 - \n
+
+
+
+
+
