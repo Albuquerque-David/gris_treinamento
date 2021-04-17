@@ -1,8 +1,4 @@
-1: Output do RD pro barramento jogando o 0x52 no barramento. 
-2: Registra o 0x52 no IP_H (esquerda) do Reg R3
-3: Output do RD pro barramento jogando o 0x84 no barramento
-4: Input no T1 pegando o 0x84 do barramento
-5: Input pro T1 na ULA
-6: ULA soma 0b10 a T1 para ficar 0x86 e 
-7: ULA da output pro barramento
-8: Registra o 0x86 que está no barramento no IP_L (direita) do Reg R3
+1: Output do RD pro barramento jogando o 0x52 no barramento, e inputando o 0x52  no IP_H (esquerda) do registrador R3. 
+2: Output do RD pro barramento jogando o 0x84 no barramento, e inputa no T1 pegando o 0x84 do barramento
+3: Input do T1 pra I_T1_ULA
+4: ULA soma 0b10 a T1 para ficar 0x86, ULA da output pro barramento e input no IP_L (direita) do registrador R3
