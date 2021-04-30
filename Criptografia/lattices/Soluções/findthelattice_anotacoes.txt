@@ -1,0 +1,18 @@
+[] = variável.
+Gerar chaves():
+
+1º: Gera um primo [q]
+2º: Gera um número aleatório [f]
+3º: Gera um [g] coprimo [f]
+4º: [h] = ((inverso [f] mod [q])*[g]) % [q]
+
+Chaves públicas: [h],[q].
+Chaves privadas: [f],[g].
+
+Encriptar (q,h,m):
+
+1º: r = aleatório entre 2 e raiz de [q]//2.
+2º: Mensagem = ([r]*[h] + [m]) % [q].
+
+Decriptar (q,h,f,g,e):
+
